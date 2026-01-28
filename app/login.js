@@ -4,27 +4,21 @@ import { useState } from 'react'
 export default function App() {
   const [username, onChangeUsername] = useState()
   const [password, onChangePassword] = useState()
-  function checkDetails(){
-    if(username != null && username != ""){
-        console.log("Username is present!")
-    }
+  const [msg, onChangeMessage] = useState("Please put in a Username and Password ^-^ /")
 
+  function checkDetails(){
     if(username == null || username == ""){
-      console.warn("username is blank")
-      Alert.alert('USERNAME WARNING', 'PLEASE GIVE AN ACTUAL USERNAME.')
-    } else {
-      console.log("username (" + username + ") is not blank")
+      console.log(msg)
+      onChangeMessage("your input is empty :(")
     }
-    if(password == null || password == ""){
-      console.warn("password is blank")
-      Alert.alert('PASSWORD WARNING', 'PLEASE GIVE AN ACTUAL PASSWORD.')
-    } else {
-      console.log("password (" + password + ") is not blank")
-    }
+    // MAKE A THING FOR CHECKING PASSWORD
+    // AND MAKE CHECKS FOR SEPARATE BLANK INPUTS
+    // THEN MAKE IT TAKE YOU TO ANOTHER PAGE ONCE USERNAME AND PASSWORD IS OKAY
   }
 
   return (
     <SafeAreaView>
+
     <TextInput
       placeholder="Put In Your Desired Username"
       onChangeText={onChangeUsername}
@@ -32,6 +26,7 @@ export default function App() {
       style={styles.Haruka}
       maxLength={40}
     />
+
     <TextInput
       placeholder="Put In Your Desired Password"
       onChangeText={onChangePassword}
@@ -39,10 +34,16 @@ export default function App() {
       style={styles.Haruka}
       maxLength={40}
     />
+
     <Button
       title="PRESS ME"
       onPress={checkDetails}
     />
+    
+    <Text style={styles.guide}>
+      {msg}
+    </Text>
+
     </SafeAreaView>
   );
 }
@@ -54,7 +55,13 @@ const styles = StyleSheet.create({
     borderWidth: 1,
     padding: 10,
   },
-  Hoshiguma: {
-
+  guide: {
+    alignSelf: 'center',
+    fontSize: "30",
+  },
+  error: {
+    alignSelf: 'center',
+    fontSize: "30",
+    color: 'red'
   }
 });
