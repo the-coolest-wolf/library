@@ -29,15 +29,17 @@ export default function App() {
 
 
   // MESSAGE FOR FRIDAY OMNILA:
-  // - CHANGE THE BUTTON TO LOOK LIKE AN ACTUAL BUTTON AND NOT A TEXT
-  // - CHANGE THE ENTIRE POSITION OF EVERYTHING ON THE LOG-IN PAGE TO BE IN THE MIDDLE
   // - RESEARCH DATABASES
   return (
     <SafeAreaView>
 
+    <Text style={ (!areasFilled) ? styles.error : styles.guide}>
+      {msg}
+    </Text>
+
     {/* Username Input */}
     <TextInput
-      placeholder="Put In Your Desired Username"
+      placeholder="Put In Your Username"
       onChangeText={onChangeUsername}
       value={username}
       style={styles.input}
@@ -46,21 +48,18 @@ export default function App() {
 
     {/* Password Input */}
     <TextInput
-      placeholder="Put In Your Desired Password"
+      placeholder="Put In Your Password"
       onChangeText={onChangePassword}
       value={password}
       style={styles.input}
       maxLength={30}
     />
 
+    {/* Confirmation Button */}
     <Button
       title="Submit Username and Password"
       onPress={checkDetails}
     />
-    
-    <Text style={ (!areasFilled) ? styles.error : styles.guide}>
-      {msg}
-    </Text>
 
     </SafeAreaView>
   );
@@ -83,5 +82,10 @@ const styles = StyleSheet.create({
     fontSize: "30",
     color: 'red',
     fontWeight: 'bold',
-  }
+  },
+  container: {
+    flex: 1,
+    justifyContent: 'center',
+    marginHorizontal: 16,
+  },
 });
