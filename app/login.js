@@ -27,9 +27,6 @@ export default function App() {
     }
   }
 
-
-  // MESSAGE FOR FRIDAY OMNILA:
-  // - RESEARCH DATABASES
   return (
     <SafeAreaView>
 
