@@ -3,7 +3,7 @@ import { Pressable, StyleSheet, Text, View } from 'react-native';
 import {Link} from 'expo-router';
 
 
-export default function LinkButton(page,title) {
+export default function ButtonsLinked(page,title) {
     return(
         <View style={styles.container}>
             <Link style={styles.texts} href={page}>{title}</Link>

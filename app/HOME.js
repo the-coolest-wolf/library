@@ -1,8 +1,6 @@
 import React from "react";
 import { View, Text } from "react-native";
-import styles from "./styles";
-import {Link} from "export-router";
-import LinkButton from "../components/linkButton";
+//import LinkButton from "../components/LinkButton";
 
 export default function App() {
 
