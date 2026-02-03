@@ -1,6 +1,6 @@
 import { StatusBar } from 'expo-status-bar';
 import { Pressable, StyleSheet, Text, View } from 'react-native';
-import {Link} from 'expo-router';
+import { Link } from 'expo-router';
 
 
 export default function LinkButton(page,title) {
