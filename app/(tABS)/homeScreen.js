@@ -1,18 +1,28 @@
 import React from 'react';
-import {StyleSheet, Text, ScrollView, StatusBar} from 'react-native';
+import {StyleSheet, Text, ScrollView, StatusBar, Image, Button} from 'react-native';
 import {SafeAreaView, SafeAreaProvider} from 'react-native-safe-area-context';
-const lemonadeStand = () =>(
+import LinkButton from '../../components/LinkButton';
+import { Link } from 'expo-router';
+const scrollViews = () =>(
   <SafeAreaProvider>
     <SafeAreaView style={styles.container}>
       <ScrollView style={styles.awesomeScrollyView}>
-        <Text>Testing 123</Text>
+        <SafeAreaView style={styles.container}>
+          <Link style={styles.linkStyle1} href="publicScreen">Public Profile</Link>
+        </SafeAreaView>
+        <SafeAreaView style={styles.container}>
+          <Link style={styles.linkStyle2} href="settingsScreen">Settings</Link>
+        </SafeAreaView>
+        {/* <LinkButton style={styles.linkButtonTesting} page="" title="Public Profile"/> */}
+        
+
       </ScrollView>
     </SafeAreaView>
   </SafeAreaProvider>
 );
 export default function App(){
   return(
-    lemonadeStand()
+    scrollViews()
   );
 }
 
@@ -24,7 +34,17 @@ const styles = StyleSheet.create({
   container:{
     flex: 1,
     paddingTop: StatusBar.currentHeight,
+    // paddingLeft:10,
+    // paddingRight:10,
   },awesomeScrollyView:{
-    backgroundColor:'#adeeea'
+    backgroundColor:'#97c19b'
+  },linkStyle1:{
+    fontSize:20,
+  },linkStyle2:{
+    fontSize:20,
+    position:'absolute',
+    top:-15,
+    justifyContent:'flex-end',
+    alignSelf:'flex-end',
   },
 });
