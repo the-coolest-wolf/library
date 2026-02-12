@@ -16,7 +16,33 @@ const scrollViews = () =>(
         {/* <LinkButton style={styles.linkButtonTesting} page="" title="Public Profile"/> */}
         <SafeAreaView>
           <Image style={styles.book} source={require('../../assets/battleGround.jpg')}/>
-          <Text>Your favorite book</Text>
+          <Text style={styles.texts}>Currently reading</Text>
+          <Text style={styles.linkStyle3}>lorem ipsum</Text>
+        </SafeAreaView>
+         <SafeAreaView>
+          <Image style={styles.book} source={require('../../assets/battleGround.jpg')}/>
+          <Text style={styles.texts}>Your favorite book</Text>
+          <Text style={styles.linkStyle3}>lorem ipsum</Text>
+        </SafeAreaView>
+         <SafeAreaView>
+          <Image style={styles.book} source={require('../../assets/battleGround.jpg')}/>
+          <Text style={styles.texts}>Current top book worldwide</Text>
+          <Text style={styles.linkStyle3}>lorem ipsum</Text>
+        </SafeAreaView>
+         <SafeAreaView>
+          <Image style={styles.book} source={require('../../assets/battleGround.jpg')}/>
+          <Text style={styles.texts}>Reccomendation for new readers</Text>
+          <Text style={styles.linkStyle3}>lorem ipsum</Text>
+        </SafeAreaView>
+        <SafeAreaView>
+          <Image style={styles.book} source={require('../../assets/battleGround.jpg')}/>
+          <Text style={styles.texts}>Rising Star</Text>
+          <Text style={styles.linkStyle3}>lorem ipsum</Text>
+        </SafeAreaView>
+         <SafeAreaView>
+          <Image style={styles.authorStyle} source={require('../../assets/author1.jpg')}/>
+          <Text style={styles.texts}>Your favorite author</Text>
+          <Text style={styles.linkStyle3}>lorem ipsum</Text>
         </SafeAreaView>
 
       </ScrollView>
@@ -38,6 +64,8 @@ const styles = StyleSheet.create({
   awesomeScrollyView:{backgroundColor:'#97c19b'},
   linkStyle1:{fontSize:20,},
   linkStyle2:{fontSize:20,position:'absolute',top:-15,justifyContent:'flex-end',alignSelf:'flex-end',},
-  book:{height:250,width:140,marginTop: 40,marginLeft:20,},
-  texts:{top:-20,fontWeight:20},
+  book:{height:500,width:279.5,marginTop: 40,marginLeft:40,borderColor:'black',borderWidth:5,marginBottom:-75,},
+  texts:{top:-230,fontWeight:20, alignSelf:'flex-end',marginRight:40,fontWeight:100,fontSize:50},
+  linkStyle3:{top:-300,marginLeft:100,alignSelf:'flex-end'},
+  authorStyle:{height:270,width:270,marginLeft:40,marginTop:75,}
 });
