@@ -14,7 +14,10 @@ const scrollViews = () =>(
           <Link style={styles.linkStyle2} href="settingsScreen">Settings</Link>
         </SafeAreaView>
         {/* <LinkButton style={styles.linkButtonTesting} page="" title="Public Profile"/> */}
-        
+        <SafeAreaView>
+          <Image style={styles.book} source={require('../../assets/battleGround.jpg')}/>
+          <Text>Your favorite book</Text>
+        </SafeAreaView>
 
       </ScrollView>
     </SafeAreaView>
@@ -31,20 +34,10 @@ export default function App(){
 
 
 const styles = StyleSheet.create({
-  container:{
-    flex: 1,
-    paddingTop: StatusBar.currentHeight,
-    // paddingLeft:10,
-    // paddingRight:10,
-  },awesomeScrollyView:{
-    backgroundColor:'#97c19b'
-  },linkStyle1:{
-    fontSize:20,
-  },linkStyle2:{
-    fontSize:20,
-    position:'absolute',
-    top:-15,
-    justifyContent:'flex-end',
-    alignSelf:'flex-end',
-  },
+  container:{flex: 1,paddingTop: StatusBar.currentHeight,},
+  awesomeScrollyView:{backgroundColor:'#97c19b'},
+  linkStyle1:{fontSize:20,},
+  linkStyle2:{fontSize:20,position:'absolute',top:-15,justifyContent:'flex-end',alignSelf:'flex-end',},
+  book:{height:250,width:140,marginTop: 40,marginLeft:20,},
+  texts:{top:-20,fontWeight:20},
 });
