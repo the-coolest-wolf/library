@@ -22,7 +22,7 @@ export default function App() {
       onChangeMessage("Please put in a Password") // switch message to ask for a pass
       onFillArea(false);
     } else { // otherwise, if both inputs have something in it,
-      onChangeMessage("Navigating you to next page...") // 
+      onChangeMessage("Navigating you to next page...") 
       onFillArea(true); // change this boolean to be true and change text (line 54)
     }
   }
