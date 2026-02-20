@@ -11,7 +11,7 @@ const scrollViews = () =>(
           <Link style={styles.linkStyle1} href="publicScreen">Public Profile</Link>
         </SafeAreaView>
         <SafeAreaView style={styles.container}>
-          <Link style={styles.linkStyle2} href="settingsScreen">Settings</Link>
+          <Link style={styles.linkStyle2} href="../settingsScreen">Settings</Link>
         </SafeAreaView>
         {/* <LinkButton style={styles.linkButtonTesting} page="" title="Public Profile"/> */}
         <SafeAreaView>
