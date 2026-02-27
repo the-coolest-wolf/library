@@ -15,17 +15,17 @@ const scrollViews = () =>(
         </SafeAreaView>
         {/* <LinkButton style={styles.linkButtonTesting} page="" title="Public Profile"/> */}
         <SafeAreaView>
-          <Image style={styles.book} source={require('../../assets/battleGround.jpg')}/>
+          <Image style={styles.book} source={require('../../assets/WIntoTheWild.jpg')}/>
           <Text style={styles.texts}>Currently Reading</Text>
           <Text style={styles.linkStyle3}>lorem ipsum</Text>
         </SafeAreaView>
          <SafeAreaView>
-          <Image style={styles.book} source={require('../../assets/battleGround.jpg')}/>
+          <Image style={styles.book} source={require('../../assets/1984.jpg')}/>
           <Text style={styles.texts}>Your Favorite Book</Text>
           <Text style={styles.linkStyle3}>lorem ipsum</Text>
         </SafeAreaView>
          <SafeAreaView>
-          <Image style={styles.book} source={require('../../assets/battleGround.jpg')}/>
+          <Image style={styles.book} source={require('../../assets/theOutsiders.jpg')}/>
           <Text style={styles.texts}>Current Top Book Worldwide</Text>
           <Text style={styles.linkStyle3}>lorem ipsum</Text>
         </SafeAreaView>
@@ -35,12 +35,12 @@ const scrollViews = () =>(
           <Text style={styles.linkStyle3}>lorem ipsum</Text>
         </SafeAreaView>
         <SafeAreaView>
-          <Image style={styles.book} source={require('../../assets/battleGround.jpg')}/>
+          <Image style={styles.book} source={require('../../assets/riyriaRevo1.jpg')}/>
           <Text style={styles.texts}>Rising Star</Text>
           <Text style={styles.linkStyle3}>lorem ipsum</Text>
         </SafeAreaView>
          <SafeAreaView>
-          <Image style={styles.authorStyle} source={require('../../assets/author1.jpg')}/>
+          <Image style={styles.authorStyle} source={require('../../assets/author2.jpg')}/>
           <Text style={styles.texts}>Your Favorite Author</Text>
           <Text style={styles.linkStyle3}>lorem ipsum</Text>
         </SafeAreaView>
