@@ -40,7 +40,7 @@ const scrollViews = () =>(
           <Text style={styles.linkStyle3}>lorem ipsum</Text>
         </SafeAreaView>
          <SafeAreaView>
-          <Image style={styles.authorStyle} source={require('../../assets/author2.jpg')}/>
+          <Image style={styles.authorStyle} source={require('../../assets/author1.jpg')}/>
           <Text style={styles.texts}>Your Favorite Author</Text>
           <Text style={styles.linkStyle3}>lorem ipsum</Text>
         </SafeAreaView>
