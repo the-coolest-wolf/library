@@ -28,13 +28,13 @@ export default function App() {
       onChangeMessage("Please put in a Password") // switch message to ask for a pass
       onFillArea(false);
       page = "login";
-    } else if(username == "omnila" && password == "omnialnalinila") { // otherwise, if both inputs have something in it,
+    } else if(username == "omnila" && password == "omnialnalinila") { // my log-in credentials
       onChangeMessage("Navigating you to next page...") 
-      onFillArea(true); // change this boolean to be true and change text (line 44)
+      onFillArea(true); // change this boolean to be true and change text (line 45)
       page = "omnila";
-    } else if(username == "the_wolf" && password == "1234"){
+    } else if(username == "the_wolf" && password == "1234"){ // hunter's log-in credentials
       onChangeMessage("Navigating you to next page...") 
-      onFillArea(true); // change this boolean to be true and change text (line 44)
+      onFillArea(true); // change this boolean to be true and change text (line 45)
       page = "homeScreen";
     }
   }
