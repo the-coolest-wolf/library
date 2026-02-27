@@ -35,7 +35,7 @@ const scrollViews = () =>(
           <Text style={styles.linkStyle3}>lorem ipsum</Text>
         </SafeAreaView>
         <SafeAreaView>
-          <Image style={styles.book} source={require('../../assets/riyriaRevo1.jpg')}/>
+          <Image style={styles.book} source={require('../../assets/superPowereds1.jpg')}/>
           <Text style={styles.texts}>Rising Star</Text>
           <Text style={styles.linkStyle3}>lorem ipsum</Text>
         </SafeAreaView>
