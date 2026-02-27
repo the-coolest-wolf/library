@@ -39,9 +39,6 @@ export default function App() {
     }
   }
 
-  // MAKE HARD CODED USERNAMES AND PASSWORDS AND OTHER SCREENS FOR HARD CODED PROFILES!
-  // YOU ARE PRESENTING THIS! IN TWO WEEKS! STUPID BUM!
-
   return (
     <SafeAreaView>
 
