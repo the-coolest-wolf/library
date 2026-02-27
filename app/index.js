@@ -1,10 +1,13 @@
 import { View, Text } from "react-native";
 import LinkButton from "../components/LinkButton";
+import { databases, Client } from 'appwrite'
+
 export default function tester(){
     return (
         <View>
         <Text>good day!</Text>
-        <LinkButton page="/(tABS)/homeScreen" title="tests"/>
+        <LinkButton page="/(tABS)/homeScreen" title="home page"/>
+        <LinkButton page="login" title="login page"/>
         </View>
     )
 }

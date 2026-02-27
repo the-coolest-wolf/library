@@ -1,0 +1,79 @@
+{
+    "projectId": "6986534f003dc32034e4",
+    "projectName": "library user data",
+    "endpoint": "https://sfo.cloud.appwrite.io/v1",
+    "settings": {
+        "services": {
+            "account": true,
+            "avatars": true,
+            "databases": true,
+            "locale": true,
+            "health": true,
+            "storage": true,
+            "teams": true,
+            "users": true,
+            "sites": true,
+            "functions": true,
+            "graphql": true,
+            "messaging": true
+        },
+        "auth": {
+            "methods": {
+                "jwt": true,
+                "phone": true,
+                "invites": true,
+                "anonymous": true,
+                "email-otp": true,
+                "magic-url": true,
+                "email-password": true
+            },
+            "security": {
+                "duration": 31536000,
+                "limit": 0,
+                "sessionsLimit": 10,
+                "passwordHistory": 0,
+                "passwordDictionary": false,
+                "personalDataCheck": false,
+                "sessionAlerts": false,
+                "mockNumbers": []
+            }
+        }
+    },
+    "tablesDB": [
+        {
+            "$id": "6986574d001e1a3e373d",
+            "name": "library data test",
+            "enabled": true
+        }
+    ],
+    "tables": [
+        {
+            "$id": "datausers",
+            "$permissions": [],
+            "databaseId": "6986574d001e1a3e373d",
+            "name": "dataUsers",
+            "enabled": true,
+            "rowSecurity": false,
+            "columns": [
+                {
+                    "key": "username",
+                    "type": "text",
+                    "required": true,
+                    "array": false,
+                    "default": null
+                },
+                {
+                    "key": "password",
+                    "type": "text",
+                    "required": true,
+                    "array": false,
+                    "default": null
+                }
+            ],
+            "indexes": []
+        }
+    ],
+    "buckets": [],
+    "teams": [],
+    "topics": []
+}
