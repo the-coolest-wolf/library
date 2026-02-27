@@ -16,22 +16,22 @@ const scrollViews = () =>(
         {/* <LinkButton style={styles.linkButtonTesting} page="" title="Public Profile"/> */}
         <SafeAreaView>
           <Image style={styles.book} source={require('../../assets/battleGround.jpg')}/>
-          <Text style={styles.texts}>Currently reading</Text>
+          <Text style={styles.texts}>Currently Reading</Text>
           <Text style={styles.linkStyle3}>lorem ipsum</Text>
         </SafeAreaView>
          <SafeAreaView>
           <Image style={styles.book} source={require('../../assets/battleGround.jpg')}/>
-          <Text style={styles.texts}>Your favorite book</Text>
+          <Text style={styles.texts}>Your Favorite Book</Text>
           <Text style={styles.linkStyle3}>lorem ipsum</Text>
         </SafeAreaView>
          <SafeAreaView>
           <Image style={styles.book} source={require('../../assets/battleGround.jpg')}/>
-          <Text style={styles.texts}>Current top book worldwide</Text>
+          <Text style={styles.texts}>Current Top Book Worldwide</Text>
           <Text style={styles.linkStyle3}>lorem ipsum</Text>
         </SafeAreaView>
          <SafeAreaView>
           <Image style={styles.book} source={require('../../assets/battleGround.jpg')}/>
-          <Text style={styles.texts}>Reccomendation for new readers</Text>
+          <Text style={styles.texts}>Recommendation For New Readers</Text>
           <Text style={styles.linkStyle3}>lorem ipsum</Text>
         </SafeAreaView>
         <SafeAreaView>
@@ -41,7 +41,7 @@ const scrollViews = () =>(
         </SafeAreaView>
          <SafeAreaView>
           <Image style={styles.authorStyle} source={require('../../assets/author1.jpg')}/>
-          <Text style={styles.texts}>Your favorite author</Text>
+          <Text style={styles.texts}>Your Favorite Author</Text>
           <Text style={styles.linkStyle3}>lorem ipsum</Text>
         </SafeAreaView>
 

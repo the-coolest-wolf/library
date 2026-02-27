@@ -1,29 +1,41 @@
 import { StyleSheet, Text, View, TextInput, Button, SafeAreaView } from 'react-native';
 import { useState } from 'react'
+import { useRouter } from 'expo-router';
 
 export default function App() {
+  const router = useRouter();
+
   // two variables hold the user's input of the username and password
   const [username, onChangeUsername] = useState()
   const [password, onChangePassword] = useState()
 
-  // these two variables handle the message underneath the log-in button
+  // these three variables handle the message underneath the log-in button
   const [msg, onChangeMessage] = useState("Please put in a Username and Password") // this is the message itself
   const [areasFilled, onFillArea] = useState(); // this is the boolean to check if inputs are empty or not
+  let page = "login"
 
   function checkDetails(){
     // if both username and password inputs are empty...
     if((username == null || username == "") && (password == null || password == "")){
       onChangeMessage("Please put in a Username and Password") // switch message to ask for a name and pass
       onFillArea(false);
+      page = "login";
     } else if(username == null || username == ""){ // if only username is empty...
       onChangeMessage("Please put in a Username") // switch message to ask for a name
       onFillArea(false);
+      page = "login";
     } else if(password == null || password == ""){ // if only password is empty...
       onChangeMessage("Please put in a Password") // switch message to ask for a pass
       onFillArea(false);
-    } else { // otherwise, if both inputs have something in it,
+      page = "login";
+    } else if(username == "omnila" && password == "omnialnalinila") { // my log-in credentials
       onChangeMessage("Navigating you to next page...") 
-      onFillArea(true); // change this boolean to be true and change text (line 54)
+      onFillArea(true); // change this boolean to be true and change text (line 45)
+      page = "omnila";
+    } else if(username == "the_wolf" && password == "1234"){ // hunter's log-in credentials
+      onChangeMessage("Navigating you to next page...") 
+      onFillArea(true); // change this boolean to be true and change text (line 45)
+      page = "homeScreen";
     }
   }
 
@@ -55,7 +67,11 @@ export default function App() {
     {/* Confirmation Button */}
     <Button
       title="Submit Username and Password"
-      onPress={checkDetails}
+      onPress={() => {
+        checkDetails();
+        console.log(page);
+        router.navigate(page);
+      }}
     />
 
     </SafeAreaView>
