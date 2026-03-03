@@ -11,17 +11,22 @@ const scrollViews = () =>(
           <Link style={styles.linkStyle1} href="publicScreen">Public Profile</Link>
         </SafeAreaView>
         <SafeAreaView style={styles.container}>
-          <Link style={styles.linkStyle2} href="settingsScreen">Settings</Link>
+          <Link style={styles.linkStyle2} href="../settingsScreen">Settings</Link>
         </SafeAreaView>
         {/* <LinkButton style={styles.linkButtonTesting} page="" title="Public Profile"/> */}
         <SafeAreaView>
-          <Image style={styles.book} source={require('../../assets/battleGround.jpg')}/>
+          <Image style={styles.book} source={require('../../assets/WIntoTheWild.jpg')}/>
           <Text style={styles.texts}>Currently Reading</Text>
           <Text style={styles.linkStyle3}>lorem ipsum</Text>
         </SafeAreaView>
          <SafeAreaView>
-          <Image style={styles.book} source={require('../../assets/battleGround.jpg')}/>
+          <Image style={styles.book} source={require('../../assets/1984.jpg')}/>
           <Text style={styles.texts}>Your Favorite Book</Text>
+          <Text style={styles.linkStyle3}>lorem ipsum</Text>
+        </SafeAreaView>
+         <SafeAreaView>
+          <Image style={styles.book} source={require('../../assets/theOutsiders.jpg')}/>
+          <Text style={styles.texts}>Current Top Book Worldwide</Text>
           <Text style={styles.linkStyle3}>lorem ipsum</Text>
         </SafeAreaView>
          <SafeAreaView>
@@ -29,8 +34,13 @@ const scrollViews = () =>(
           <Text style={styles.texts}>Recommendation For New Readers</Text>
           <Text style={styles.linkStyle3}>lorem ipsum</Text>
         </SafeAreaView>
+        <SafeAreaView>
+          <Image style={styles.book} source={require('../../assets/superPowereds1.jpg')}/>
+          <Text style={styles.texts}>Rising Star</Text>
+          <Text style={styles.linkStyle3}>lorem ipsum</Text>
+        </SafeAreaView>
          <SafeAreaView>
-          <Image style={styles.authorStyle} source={require('../../assets/author1.jpg')}/>
+          <Image style={styles.authorStyle} source={require('../../assets/author2.webp')}/>
           <Text style={styles.texts}>Your Favorite Author</Text>
           <Text style={styles.linkStyle3}>lorem ipsum</Text>
         </SafeAreaView>
