@@ -15,36 +15,35 @@ const scrollViews = () =>(
         </SafeAreaView>
         {/* <LinkButton style={styles.linkButtonTesting} page="" title="Public Profile"/> */}
         <SafeAreaView>
-          <Image style={styles.book} source={require('../../assets/battleGround.jpg')}/>
+          <Image style={styles.book} source={require('../../assets/episode14cover.webp')}/>
           <Text style={styles.texts}>Currently Reading</Text>
-          <Text style={styles.linkStyle3}>lorem ipsum</Text>
+          <Text style={styles.linkStyle3}>Edit</Text>
         </SafeAreaView>
          <SafeAreaView>
           <Image style={styles.book} source={require('../../assets/ato_cover.webp')}/>
           <Text style={styles.texts}>Your Favorite Book</Text>
-          <Text style={styles.linkStyle3}>lorem ipsum</Text>
+          <Text style={styles.linkStyle3}>Edit</Text>
         </SafeAreaView>
          <SafeAreaView>
+          <Image style={styles.book} source={require('../../assets/ato_cover.webp')}/>
+          <Text style={styles.texts}>Recommendation For New Readers</Text>
+          <Text style={styles.linkStyle3}>Edit</Text>
+        </SafeAreaView>
+         <SafeAreaView>
+          <Image style={styles.authorStyle} source={require('../../assets/author_hai_mao.webp')}/>
+          <Text style={styles.texts}>Your Favorite Author</Text>
+          <Text style={styles.linkStyle3}>Edit</Text>
+        </SafeAreaView>
+        <SafeAreaView>
           <Image style={styles.book} source={require('../../assets/battleGround.jpg')}/>
           <Text style={styles.texts}>Current Top Book Worldwide</Text>
-          <Text style={styles.linkStyle3}>lorem ipsum</Text>
-        </SafeAreaView>
-         <SafeAreaView>
-          <Image style={styles.book} source={require('../../assets/battleGround.jpg')}/>
-          <Text style={styles.texts}>Recommendation For New Readers</Text>
-          <Text style={styles.linkStyle3}>lorem ipsum</Text>
+          <Text style={styles.linkStyle3}>Edit</Text>
         </SafeAreaView>
         <SafeAreaView>
           <Image style={styles.book} source={require('../../assets/battleGround.jpg')}/>
           <Text style={styles.texts}>Rising Star</Text>
-          <Text style={styles.linkStyle3}>lorem ipsum</Text>
+          <Text style={styles.linkStyle3}>Edit</Text>
         </SafeAreaView>
-         <SafeAreaView>
-          <Image style={styles.authorStyle} source={require('../../assets/author1.jpg')}/>
-          <Text style={styles.texts}>Your Favorite Author</Text>
-          <Text style={styles.linkStyle3}>lorem ipsum</Text>
-        </SafeAreaView>
-
       </ScrollView>
     </SafeAreaView>
   </SafeAreaProvider>

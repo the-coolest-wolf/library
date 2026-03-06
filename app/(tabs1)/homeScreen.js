@@ -34,19 +34,16 @@ const scrollViews = () =>(
           <Text style={styles.texts}>Your Favorite Author</Text>
           <Text style={styles.linkStyle3}>lorem ipsum</Text>
         </SafeAreaView>
-        <SafeAreaView style={styles.worldBox}>
-          <SafeAreaView>
-            <Image style={styles.book} source={require('../../assets/theOutsiders.jpg')}/>
-            <Text style={styles.texts}>Current Top Book Worldwide</Text>
-            <Text style={styles.linkStyle3}>lorem ipsum</Text>
-          </SafeAreaView>
-          <SafeAreaView>
-            <Image style={styles.book} source={require('../../assets/battleGround.jpg')}/>
-            <Text style={styles.texts}>Recommendation For New Readers</Text>
-            <Text style={styles.linkStyle3}>lorem ipsum</Text>
-          </SafeAreaView>
+        <SafeAreaView>
+          <Image style={styles.book} source={require('../../assets/battleGround.jpg')}/>
+          <Text style={styles.texts}>Current Top Book Worldwide</Text>
+          <Text style={styles.linkStyle3}>Edit</Text>
         </SafeAreaView>
-
+        <SafeAreaView>
+          <Image style={styles.book} source={require('../../assets/battleGround.jpg')}/>
+          <Text style={styles.texts}>Rising Star</Text>
+          <Text style={styles.linkStyle3}>Edit</Text>
+        </SafeAreaView>
       </ScrollView>
     </SafeAreaView>
   </SafeAreaProvider>
