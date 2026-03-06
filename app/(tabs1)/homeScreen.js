@@ -24,16 +24,6 @@ const scrollViews = () =>(
           <Text style={styles.texts}>Your Favorite Book</Text>
           <Text style={styles.linkStyle3}>lorem ipsum</Text>
         </SafeAreaView>
-         <SafeAreaView>
-          <Image style={styles.book} source={require('../../assets/theOutsiders.jpg')}/>
-          <Text style={styles.texts}>Current Top Book Worldwide</Text>
-          <Text style={styles.linkStyle3}>lorem ipsum</Text>
-        </SafeAreaView>
-         <SafeAreaView>
-          <Image style={styles.book} source={require('../../assets/battleGround.jpg')}/>
-          <Text style={styles.texts}>Recommendation For New Readers</Text>
-          <Text style={styles.linkStyle3}>lorem ipsum</Text>
-        </SafeAreaView>
         <SafeAreaView>
           <Image style={styles.book} source={require('../../assets/superPowereds1.jpg')}/>
           <Text style={styles.texts}>Rising Star</Text>
@@ -43,6 +33,18 @@ const scrollViews = () =>(
           <Image style={styles.authorStyle} source={require('../../assets/author2.webp')}/>
           <Text style={styles.texts}>Your Favorite Author</Text>
           <Text style={styles.linkStyle3}>lorem ipsum</Text>
+        </SafeAreaView>
+        <SafeAreaView style={styles.worldBox}>
+          <SafeAreaView>
+            <Image style={styles.book} source={require('../../assets/theOutsiders.jpg')}/>
+            <Text style={styles.texts}>Current Top Book Worldwide</Text>
+            <Text style={styles.linkStyle3}>lorem ipsum</Text>
+          </SafeAreaView>
+          <SafeAreaView>
+            <Image style={styles.book} source={require('../../assets/battleGround.jpg')}/>
+            <Text style={styles.texts}>Recommendation For New Readers</Text>
+            <Text style={styles.linkStyle3}>lorem ipsum</Text>
+          </SafeAreaView>
         </SafeAreaView>
 
       </ScrollView>
@@ -67,5 +69,6 @@ const styles = StyleSheet.create({
   book:{height:500,width:279.5,marginTop: 40,marginLeft:40,borderColor:'black',borderWidth:5,marginBottom:-75,},
   texts:{top:-230,fontWeight:20, alignSelf:'flex-end',marginRight:40,fontWeight:100,fontSize:50},
   linkStyle3:{top:-300,marginLeft:100,alignSelf:'flex-end'},
-  authorStyle:{height:270,width:270,marginLeft:40,marginTop:75,}
+  authorStyle:{height:270,width:270,marginLeft:40,marginTop:75,},
+  worldBox:{borderColor:'#0f3319',borderWidth:5,},
 });

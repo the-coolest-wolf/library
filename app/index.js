@@ -2,7 +2,7 @@ import { View, Text } from "react-native";
 import LinkButton from "../components/LinkButton";
 //import { databases, Client } from 'appwrite'
 
-export default function tester(){
+export default function App(){
     return (
         <View>
         <Text>good day!</Text>
