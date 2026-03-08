@@ -13,9 +13,9 @@ export default function App(){
                 <Text style={styles.textz}>CLASSIFIED</Text>
                 <Text style={styles.textz}>the_wolf</Text>
                 <Link style={styles.linkStyle1} href="../homeScreen">Back</Link>
-                <Image style={styles.book} source={require("../assets/sunlitMan.webp")}/>
+                <Image style={styles.book} source={require("../assets/riyriaRevo1.jpg")}/>
                 <Text style={styles.texts}>Favorite Book</Text>
-                <Image style={styles.authorStyle} source={require("../assets/author1.jpg")}/>
+                <Image style={styles.authorStyle} source={require("../assets/author2.webp")}/>
                 <Text style={styles.texts}>Favorite Author</Text>
                 <Image style={styles.book} source={require("../assets/Zen_motorcycle.jpg")}/>
                 <Text style={styles.texts}>Reccomendation for New Readers</Text>
