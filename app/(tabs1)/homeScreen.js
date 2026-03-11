@@ -20,17 +20,17 @@ const scrollViews = () =>(
           <Text style={styles.linkStyle3}>lorem ipsum</Text>
         </SafeAreaView>
          <SafeAreaView>
-          <Image style={styles.book} source={require('../../assets/1984.jpg')}/>
+          <Image style={styles.book} source={require('../../assets/riyriaRevo1.jpg')}/>
           <Text style={styles.texts}>Your Favorite Book</Text>
           <Text style={styles.linkStyle3}>lorem ipsum</Text>
         </SafeAreaView>
          <SafeAreaView>
-          <Image style={styles.book} source={require('../../assets/theOutsiders.jpg')}/>
+          <Image style={styles.book} source={require('../../assets/windAndTruth.avif')}/>
           <Text style={styles.texts}>Current Top Book Worldwide</Text>
           <Text style={styles.linkStyle3}>lorem ipsum</Text>
         </SafeAreaView>
          <SafeAreaView>
-          <Image style={styles.book} source={require('../../assets/battleGround.jpg')}/>
+          <Image style={styles.book} source={require('../../assets/Zen_motorcycle.jpg')}/>
           <Text style={styles.texts}>Recommendation For New Readers</Text>
           <Text style={styles.linkStyle3}>lorem ipsum</Text>
         </SafeAreaView>
@@ -45,12 +45,12 @@ const scrollViews = () =>(
           <Text style={styles.linkStyle3}>lorem ipsum</Text>
         </SafeAreaView>
         <SafeAreaView>
-          <Image style={styles.book} source={require('../../assets/battleGround.jpg')}/>
+          <Image style={styles.book} source={require('../../assets/WOF1.jpg')}/>
           <Text style={styles.texts}>Current Top Book Worldwide</Text>
           <Text style={styles.linkStyle3}>Edit</Text>
         </SafeAreaView>
         <SafeAreaView>
-          <Image style={styles.book} source={require('../../assets/battleGround.jpg')}/>
+          <Image style={styles.book} source={require('../../assets/shadowOverAetheria.jpg')}/>
           <Text style={styles.texts}>Rising Star</Text>
           <Text style={styles.linkStyle3}>Edit</Text>
         </SafeAreaView>
