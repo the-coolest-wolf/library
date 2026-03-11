@@ -9,7 +9,7 @@ export default function App(){
                 source={{uri:'https://pbs.twimg.com/profile_images/1944331035287666688/FJWLMWIh_400x400.jpg'}}
             />
             <Text style={styles.name}>omnila</Text>
-            <Text style={styles.description}>This would be omnila's description, editted from their personal profile page. She goes by he/him. It also identifies as a cat meow.</Text>
+            <Text style={styles.description}>This would be omnila's description, editted from their personal profile page. She goes by he/him. It also identifies as a cat meow. :3 :3 :3 :3 :3 :333333333333333333333333333333333</Text>
         </View>
     )
 }
