@@ -9,8 +9,5 @@ export default function App() {
             <Text>TESTING 123</Text>
             <LinkButton page="/(tABS)/homeScreen" title="tests"/>
         </View>
-
-
-
     ); 
 }
