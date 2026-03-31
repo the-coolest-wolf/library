@@ -1,5 +1,6 @@
 import { View, Text } from "react-native";
 import LinkButton from "../components/LinkButton";
+import { Hunter } from "../userInfo.json"
 //import { databases, Client } from 'appwrite'
 
 export default function tester(){
@@ -8,6 +9,7 @@ export default function tester(){
         <Text>good day!</Text>
         <LinkButton page="/(tABS)/homeScreen" title="home page"/>
         <LinkButton page="login" title="login page"/>
+        <Text>{Hunter.user}</Text>
         </View>
     )
 }
