@@ -6,5 +6,12 @@
         "rec":"book",
         "current":"books",
         "fav":"Andrew Givler"
+    },
+    "omnial":{
+        "user":"omnila",
+        "password":"omnialnalinila",
+        "topTen":[null,null,null,null,null,null,null,null,null,null],
+        "rec": "Ato",
+        "current": "Absolved Will Be The Seekers"
     }
 }
