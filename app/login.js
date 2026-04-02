@@ -1,6 +1,7 @@
 import { StyleSheet, Text, View, TextInput, Button, SafeAreaView } from 'react-native';
 import { useState } from 'react'
 import { useRouter } from 'expo-router';
+import { Hunter } from '../userInfo.json'
 
 export default function App() {
   const router = useRouter();

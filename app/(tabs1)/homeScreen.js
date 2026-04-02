@@ -3,6 +3,8 @@ import {StyleSheet, Text, ScrollView, StatusBar, Image, Button} from 'react-nati
 import {SafeAreaView, SafeAreaProvider} from 'react-native-safe-area-context';
 import LinkButton from '../../components/LinkButton';
 import { Link } from 'expo-router';
+import {Hunter} from '../../userInfo.json'
+
 const scrollViews = () =>(
   <SafeAreaProvider>
     <SafeAreaView style={styles.container}>

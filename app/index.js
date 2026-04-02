@@ -3,13 +3,14 @@ import LinkButton from "../components/LinkButton";
 import { Hunter } from "../userInfo.json"
 //import { databases, Client } from 'appwrite'
 
+const a="Hunter";
 export default function tester(){
     return (
         <View>
         <Text>good day!</Text>
         <LinkButton page="/(tABS)/homeScreen" title="home page"/>
         <LinkButton page="login" title="login page"/>
-        <Text>{Hunter.user}</Text>
+        <Text>{[a].user}</Text>
         </View>
     )
 }
