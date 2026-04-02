@@ -10,11 +10,9 @@ export default function App(){
     return (
         <View>
         <Text>good day!</Text>
-            <LinkButton page="homeScreen" title="home page"/>
-            <LinkButton page="login" title="login page"/>
-            <LinkButton page="hunterSearch" title="search page"/> 
         <LinkButton page="homeScreen" title="home page"/>
         <LinkButton page="login" title="login page"/>
+        <LinkButton page="hunterSearch" title="search page"/> 
         <Text>{data[0].user}</Text>
         </View>
     )
