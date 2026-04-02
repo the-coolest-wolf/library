@@ -1,9 +1,11 @@
 import { StyleSheet, Text, View, TextInput, Button, SafeAreaView } from 'react-native';
 import { useState } from 'react'
 import { useRouter } from 'expo-router';
+import { data } from '../userInfo.json'
 
 export default function App() {
   const router = useRouter();
+  const creds = require('../userInfo.json');
 
   // two variables hold the user's input of the username and password
   const [username, onChangeUsername] = useState()
@@ -28,11 +30,11 @@ export default function App() {
       onChangeMessage("Please put in a Password") // switch message to ask for a pass
       onFillArea(false);
       page = "login";
-    } else if(username == "omnila" && password == "omnialnalinila") { // my log-in credentials
+    } else if(username == creds[1].user && password == creds[1].password) { // my log-in credentials
       onChangeMessage("Navigating you to next page...") 
       onFillArea(true); // change this boolean to be true and change text (line 45)
       page = "omnila";
-    } else if(username == "the_wolf" && password == "1234"){ // hunter's log-in credentials
+    } else if(username == creds[0].user && password == creds[0].password){ // hunter's log-in credentials
       onChangeMessage("Navigating you to next page...") 
       onFillArea(true); // change this boolean to be true and change text (line 45)
       page = "homeScreen";
