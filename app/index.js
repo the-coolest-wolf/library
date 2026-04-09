@@ -1,6 +1,6 @@
 import { View, Text } from "react-native";
 import LinkButton from "../components/LinkButton";
-import databases from 'appwrite'
+//import databases from 'appwrite'
 import { arra } from "../userInfo.json"
 //import { databases, Client } from 'appwrite'
 

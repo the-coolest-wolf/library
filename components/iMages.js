@@ -1,0 +1,26 @@
+
+
+export const mage = {
+  a1984: 'assets/1984.jpg',
+  durr: 'assets/adaptive-icon.png',
+  ato_cover: 'assets/ato_cover.webp',
+  author_hai_mao: 'assets/author_hai_mao.webp',
+  author2: 'assets/author2.webp',
+  author1: 'assets/author1.jpg',
+  battleGround: 'assets/battleGround.jpg',
+  catchingFire: 'assets/catchingFire.jpg',
+  dragonsOfAutumnTwilight: 'assets/dragonsOfAutumnTwilight.jpg',
+  episode14cover: 'assets/episode14cover.webp',
+  narnia1: 'assets/narnia1.jpg',
+  riyriaRevo1: 'assets/riyriaRevo1.jpg',
+  ruleOfThree: 'assets/ruleOfThree.jpg',
+  shadowOverAetheria: 'assets/shadowOverAetheria.jpg',
+  superPowereds1: 'assets/superPowereds1.jpg',
+  sunlitMan: 'assets/sunlitMan.webp',
+  theAlchemist: 'assets/theAlchemist.jpg',
+  theOutsiders: 'assets/theOutsiders.jpg',
+  windAndTruth: 'assets/windAndTruth.avif',
+  WIntoTheWild: '../../assets/WIntoTheWild.jpg',
+  WOF1: 'assets/WOF1.jpg',
+  Zen_motorcycle: 'assets/Zen_motorcycle.jpg',
+};

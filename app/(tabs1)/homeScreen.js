@@ -4,6 +4,7 @@ import {SafeAreaView, SafeAreaProvider} from 'react-native-safe-area-context';
 import LinkButton from '../../components/LinkButton';
 import { Link } from 'expo-router';
 import {Hunter} from '../../userInfo.json'
+import {mage} from '../../components/iMages.js'
 
 const scrollViews = () =>(
   <SafeAreaProvider>
