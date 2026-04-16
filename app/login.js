@@ -30,11 +30,11 @@ export default function App() {
       onChangeMessage("Please put in a Password") // switch message to ask for a pass
       onFillArea(false);
       page = "login";
-    } else if(username == creds[1].user && password == creds[1].password) { // my log-in credentials
+    } else if(username == creds[1].user && password == creds[1].pass) { // my log-in credentials
       onChangeMessage("Navigating you to next page...") 
       onFillArea(true); // change this boolean to be true and change text (line 45)
       page = "omnila";
-    } else if(username == creds[0].user && password == creds[0].password){ // hunter's log-in credentials
+    } else if(username == creds[0].user && password == creds[0].pass){ // hunter's log-in credentials
       onChangeMessage("Navigating you to next page...") 
       onFillArea(true); // change this boolean to be true and change text (line 45)
       page = "homeScreen";
