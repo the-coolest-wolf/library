@@ -8,11 +8,10 @@ export default function TabLayout(){
       }}
     >
 
-      <Tabs.Screen name="homeScreen" options={{title: "Home"}} />
-      <Tabs.Screen name="libraryScreen" options={{title: "Library"}}/>
+      <Tabs.Screen name="hunter" options={{title: "Home"}} />
+      <Tabs.Screen name="hunterLibrary" options={{title: "Library"}}/>
       <Tabs.Screen name="huntersFriends" options={{title: "Friends"}}/>
       <Tabs.Screen name="hunterSearch" options={{title: "Search"}}/>
-      {/* <Tabs.Screen name="dabs" options={{title: "Dab Rave"}}/> */}
     </Tabs>
   )
 }

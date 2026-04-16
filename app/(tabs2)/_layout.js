@@ -8,8 +8,10 @@ export default function TabLayout(){
       }}
     >
 
-    <Tabs.Screen name="omnila" options={{title: "omnila's Home"}}/>
-    <Tabs.Screen name="omnilaLibrary" options={{title: "omnila's Library"}}/>
+    <Tabs.Screen name="omnila" options={{title: "Home"}}/>
+    <Tabs.Screen name="omnilaLibrary" options={{title: "Library"}}/>
+    <Tabs.Screen name="omnilaFriends" options={{title: "Friends"}}/>
+    <Tabs.Screen name="omnilaSearch" options={{title: "Search"}}/>
     </Tabs>
   )
 }
