@@ -6,7 +6,7 @@ import {Link} from 'expo-router';
 export default function LinkButton({page,title}) {
     return(
         <View style={styles.container}>
-            <Link style={styles.texts} href={page}>{title}</Link>
+            <Link style={styles.login} href={page}>{title}</Link>
         </View>
     );
 }
@@ -18,12 +18,12 @@ export default function LinkButton({page,title}) {
 const styles = StyleSheet.create({
   container: {
     height:50,
-    //width: 200,
-    borderWidth: 2,
   },
-  texts: {
-    alignSelf: "center",
+  login: {
+    alignSelf: "flex-end",
     justifyContent: "center",
     fontSize: 40,
+    borderWidth: 3,
+    fontFamily: "Comic Sans"
   }
 });
