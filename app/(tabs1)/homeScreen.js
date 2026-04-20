@@ -3,6 +3,8 @@ import {StyleSheet, Text, ScrollView, StatusBar, Image, Button} from 'react-nati
 import {SafeAreaView, SafeAreaProvider} from 'react-native-safe-area-context';
 import LinkButton from '../../components/LinkButton';
 import { Link } from 'expo-router';
+import { avalue } from '../settingsScreen';
+
 const scrollViews = () =>(
   <SafeAreaProvider>
     <SafeAreaView style={styles.container}>
@@ -70,7 +72,7 @@ export default function App(){
 
 const styles = StyleSheet.create({
   container:{flex: 1,paddingTop: StatusBar.currentHeight,},
-  awesomeScrollyView:{backgroundColor:'#97c19b'},
+  awesomeScrollyView:{backgroundColor:avalue},
   linkStyle1:{fontSize:20,},
   linkStyle2:{fontSize:20,position:'absolute',top:-15,justifyContent:'flex-end',alignSelf:'flex-end',},
   book:{height:500,width:279.5,marginTop: 40,marginLeft:40,borderColor:'black',borderWidth:5,marginBottom:-75,},

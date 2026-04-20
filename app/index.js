@@ -8,6 +8,7 @@ export default function tester(){
         <Text>good day!</Text>
         <LinkButton page="/(tABS)/homeScreen" title="home page"/>
         <LinkButton page="login" title="login page"/>
+        <LinkButton page="settingsScreen" title="settings"/>
         </View>
     )
 }
