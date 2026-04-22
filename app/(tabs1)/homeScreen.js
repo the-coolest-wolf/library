@@ -1,12 +1,5 @@
 import React from 'react';
-import {
-  StyleSheet,
-  Text,
-  ScrollView,
-  StatusBar,
-  Image,
-  TouchableOpacity
-} from 'react-native';
+import {  StyleSheet,  Text,  ScrollView,  StatusBar,  Image,  TouchableOpacity} from 'react-native';
 import { SafeAreaView, SafeAreaProvider } from 'react-native-safe-area-context';
 import { Link } from 'expo-router';
 import { avalue } from '../settingsScreen';
@@ -53,7 +46,7 @@ const ScrollViews = () => (
     <SafeAreaView>
       <Image
         style={styles.book}
-        source={require('../../assets/Zen\_motorcycle.jpg')}
+        source={require('../../assets/Zen_motorcycle.jpg')}
       />
       <Text style={styles.texts}>Recommendation For New Readers</Text>
       <Text style={styles.linkStyle3}>lorem ipsum</Text>

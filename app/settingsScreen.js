@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { View, Text, StyleSheet } from "react-native";
 import { Dropdown } from 'react-native-element-dropdown';
+import { Link } from 'expo-router';
 
 const data = [
   { label: 'Grey', value: "grey" },
@@ -17,7 +18,9 @@ export default function App() {
     <View style={[styles.container, { backgroundColor: avalue }]}>
       <Text>{"\n\n\n\n"}</Text>
       <Text>What is your desired background?</Text>
-      
+      <Link style={styles.linkStyle1} href="../settingsScreen">
+          Settings
+        </Link>
       <View style={styles.card}>
         <Dropdown
           style={styles.dropdownBorder}
@@ -53,4 +56,11 @@ const styles = StyleSheet.create({
     borderRadius: 15,
     elevation: 5,
   },
+  linkStyle1:{
+    fontSize: 20,
+    position: 'absolute',
+    top: -15,
+    justifyContent: 'flex-end',
+    alignSelf: 'flex-end',
+  }
 });
