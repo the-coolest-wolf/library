@@ -13,7 +13,7 @@ export default function App() {
 
   // these three variables handle the message underneath the log-in button
   const [msg, onChangeMessage] = useState("Please put in a Username and Password") // this is the message itself
-  const [areasFilled, onFillArea] = useState(); // this is the boolean to check if inputs are empty or not
+  const [areasFilled, onFillArea] = useState() // this is the boolean to check if inputs are empty or not
   let page = "login"
 
   function checkDetails(){
