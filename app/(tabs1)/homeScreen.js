@@ -6,7 +6,7 @@ import { avalue } from '../settingsScreen';
 
 const ScrollViews = () => (
 <ScrollView>
-<Text>Public Profile</Text>
+<Link href="../publicScreen">Public Profile</Link>
 
 <SafeAreaView style={styles.container}>
   <Link style={styles.linkStyle2} href="../settingsScreen">

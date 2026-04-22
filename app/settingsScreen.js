@@ -11,15 +11,15 @@ const data = [
 
 export default function App() {
   // 1. Lift state to the main App component
-  const [avalue, setValue] = useState('grey'); 
+   const [avalue, setValue] = useState('grey');
 
   return (
     // 2. Pass the background color directly to the style here
     <View style={[styles.container, { backgroundColor: avalue }]}>
       <Text>{"\n\n\n\n"}</Text>
       <Text>What is your desired background?</Text>
-      <Link style={styles.linkStyle1} href="../settingsScreen">
-          Settings
+      <Link style={styles.linkStyle1} href="/(tabs1)/homeScreen">
+          Back
         </Link>
       <View style={styles.card}>
         <Dropdown
@@ -38,7 +38,7 @@ export default function App() {
     </View>
   );
 }
-
+//export {avalue};
 const styles = StyleSheet.create({
   container: {
     flex: 1, // Added flex: 1 to fill the screen
@@ -59,8 +59,8 @@ const styles = StyleSheet.create({
   linkStyle1:{
     fontSize: 20,
     position: 'absolute',
-    top: -15,
-    justifyContent: 'flex-end',
-    alignSelf: 'flex-end',
+    top: -1,
+    justifyContent: 'flex-start',
+    alignSelf: 'flex-start',
   }
 });
