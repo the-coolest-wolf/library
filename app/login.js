@@ -41,19 +41,19 @@ export default function App() {
     } else if (username == creds[0].user && password == creds[0].pass) { // hunter's log-in credentials
       onChangeMessage("Navigating you to next page...")
       onFillArea(true); // change this boolean to be true and change text (line 51)
-      page = "homeScreen";
+      page = "hunter";
     }
   }
 
   return (
     <SafeAreaView>
 
-      /**
+      {/**
       * This Text element opener is responsible for changing the color of the responding text.
       * It checks whether or not the areasFilled variable is false ("(!areasFilled)")
       * If it is false, it throws the error styled text, making it red. ("? styles.error")
       * Otherwise, it changes to the guide styled text, making it blue. (": styles.guide")
-      */
+      */}
       <Text style={(!areasFilled) ? styles.error : styles.guide}>
         {message}
       </Text>
