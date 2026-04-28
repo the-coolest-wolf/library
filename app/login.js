@@ -12,34 +12,34 @@ export default function App() {
   const [password, onChangePassword] = useState()
 
   // these three variables handle the message underneath the log-in button
-  const [msg, onChangeMessage] = useState("Please put in a Username and Password") // this is the message itself
-  const [areasFilled, onFillArea] = useState(); // this is the boolean to check if inputs are empty or not
+  const [message, onChangeMessage] = useState("Please put in a Username and Password") // this is the message itself
+  const [areasFilled, onFillArea] = useState() // this is the boolean to check if inputs are empty or not
   let page = "login"
 
-  function checkDetails(){
+  function checkDetails() {
     // if both username and password inputs are empty...
-    if((username == null || username == "") && (password == null || password == "")){
+    if ((username == null || username == "") && (password == null || password == "")) {
       onChangeMessage("Please put in a Username and Password") // switch message to ask for a name and pass
       onFillArea(false);
       page = "login";
-    } else if(username == null || username == ""){ // if only username is empty...
+    } else if (username == null || username == "") { // if only username is empty...
       onChangeMessage("Please put in a Username") // switch message to ask for a name
       onFillArea(false);
       page = "login";
-    } else if(password == null || password == ""){ // if only password is empty...
+    } else if (password == null || password == "") { // if only password is empty...
       onChangeMessage("Please put in a Password") // switch message to ask for a pass
       onFillArea(false);
       page = "login";
-    } else if(username == creds[2].user && password == creds[2].pass) {
-      onChangeMessage("Navigating you to next page...") 
+    } else if (username == creds[2].user && password == creds[2].pass) {
+      onChangeMessage("Navigating you to next page...")
       onFillArea(true); // change this boolean to be true and change text (line 51)
       page = "guest";
-    } else if(username == creds[1].user && password == creds[1].pass) { // my log-in credentials
-      onChangeMessage("Navigating you to next page...") 
+    } else if (username == creds[1].user && password == creds[1].pass) { // my log-in credentials
+      onChangeMessage("Navigating you to next page...")
       onFillArea(true); // change this boolean to be true and change text (line 51)
       page = "omnila";
-    } else if(username == creds[0].user && password == creds[0].pass){ // hunter's log-in credentials
-      onChangeMessage("Navigating you to next page...") 
+    } else if (username == creds[0].user && password == creds[0].pass) { // hunter's log-in credentials
+      onChangeMessage("Navigating you to next page...")
       onFillArea(true); // change this boolean to be true and change text (line 51)
       page = "homeScreen";
     }
@@ -48,37 +48,43 @@ export default function App() {
   return (
     <SafeAreaView>
 
-    <Text style={ (!areasFilled) ? styles.error : styles.guide}>
-      {msg}
-    </Text>
+      /**
+      * This Text element opener is responsible for changing the color of the responding text.
+      * It checks whether or not the areasFilled variable is false ("(!areasFilled)")
+      * If it is false, it throws the error styled text, making it red. ("? styles.error")
+      * Otherwise, it changes to the guide styled text, making it blue. (": styles.guide")
+      */
+      <Text style={(!areasFilled) ? styles.error : styles.guide}>
+        {message}
+      </Text>
 
-    {/* Username Input */}
-    <TextInput
-      placeholder="Put In Your Username"
-      onChangeText={onChangeUsername}
-      value={username}
-      style={styles.input}
-      maxLength={20}
-    />
+      {/* Username Input */}
+      <TextInput
+        placeholder="Put In Your Username"
+        onChangeText={onChangeUsername}
+        value={username}
+        style={styles.input}
+        maxLength={20}
+      />
 
-    {/* Password Input */}
-    <TextInput
-      placeholder="Put In Your Password"
-      onChangeText={onChangePassword}
-      value={password}
-      style={styles.input}
-      maxLength={30}
-    />
+      {/* Password Input */}
+      <TextInput
+        placeholder="Put In Your Password"
+        onChangeText={onChangePassword}
+        value={password}
+        style={styles.input}
+        maxLength={30}
+      />
 
-    {/* Confirmation Button */}
-    <Button
-      title="Submit Username and Password"
-      onPress={() => {
-        checkDetails();
-        console.log(page);
-        router.navigate(page);
-      }}
-    />
+      {/* Confirmation Button */}
+      <Button
+        title="Submit Username and Password"
+        onPress={() => {
+          checkDetails();
+          console.log(page);
+          router.navigate(page);
+        }}
+      />
 
     </SafeAreaView>
   );
