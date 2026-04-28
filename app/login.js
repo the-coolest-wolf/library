@@ -1,6 +1,7 @@
 import { StyleSheet, Text, View, TextInput, Button, SafeAreaView } from 'react-native';
 import { useState } from 'react'
 import { useRouter } from 'expo-router';
+import { LinkButton } from '../components/LinkButton'
 import { data } from '../userInfo.json'
 
 export default function App() {
@@ -47,7 +48,7 @@ export default function App() {
 
   return (
     <SafeAreaView>
-
+    
       {/**
       * This Text element opener is responsible for changing the color of the responding text.
       * It checks whether or not the areasFilled variable is false ("(!areasFilled)")
