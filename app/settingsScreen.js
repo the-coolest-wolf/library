@@ -7,7 +7,7 @@ const data = [
   { label: 'Grey', value: "grey" },
   { label: 'Green', value: "#97c19b" },
   { label: 'Orange', value: "#FFAB29" },
-];
+];gut 
 
 export default function App() {
   // 1. Lift state to the main App component
@@ -18,7 +18,7 @@ export default function App() {
     <View style={[styles.container, { backgroundColor: avalue }]}>
       <Text>{"\n\n\n\n"}</Text>
       <Text>What is your desired background?</Text>
-      <Link style={styles.linkStyle1} href="/(tabs1)/homeScreen">
+      <Link style={styles.linkStyle1} href="/(tabs1)/hunter">
           Back
         </Link>
       <View style={styles.card}>
