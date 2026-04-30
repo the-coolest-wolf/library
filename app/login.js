@@ -41,7 +41,7 @@ export default function App() {
     } else if (username == creds[0].user && password == creds[0].pass) { // hunter's log-in credentials
       onChangeMessage("Navigating you to next page...")
       onFillArea(true); // change this boolean to be true and change text (line 51)
-      page = "homeScreen";
+      page ="hunter";
     }
   }
 

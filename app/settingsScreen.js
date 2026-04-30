@@ -2,12 +2,13 @@ import React, { useState } from 'react';
 import { View, Text, StyleSheet } from "react-native";
 import { Dropdown } from 'react-native-element-dropdown';
 import { Link } from 'expo-router';
+import { avalue, AsetValue } from '../components/backgroundColor';
 
 const data = [
   { label: 'Grey', value: "grey" },
   { label: 'Green', value: "#97c19b" },
   { label: 'Orange', value: "#FFAB29" },
-];gut 
+];
 
 export default function App() {
   // 1. Lift state to the main App component
@@ -29,7 +30,7 @@ export default function App() {
           valueField="value"
           placeholder="Default (Grey)"
           value={avalue}
-          onChange={item => setValue(item.value)}
+          onChange={item => AsetValue(item.value)}
         />
       </View>
 
