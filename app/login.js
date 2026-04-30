@@ -1,6 +1,7 @@
-import { StyleSheet, Text, View, TextInput, Button, SafeAreaView } from 'react-native';
+import { StyleSheet, Text, View, TextInput, Button, SafeAreaView, Image } from 'react-native';
 import { useState } from 'react'
 import { useRouter } from 'expo-router';
+import LinkButton from '../components/LinkButton'
 import { data } from '../userInfo.json'
 
 export default function App() {
@@ -47,6 +48,7 @@ export default function App() {
 
   return (
     <SafeAreaView>
+      <LinkButton page="../" title="Sign Up" />
 
       {/**
       * This Text element opener is responsible for changing the color of the responding text.
@@ -58,34 +60,34 @@ export default function App() {
         {message}
       </Text>
 
-      {/* Username Input */}
-      <TextInput
-        placeholder="Put In Your Username"
-        onChangeText={onChangeUsername}
-        value={username}
-        style={styles.input}
-        maxLength={20}
-      />
+        {/* Username Input */}
+        <TextInput
+          placeholder="Put In Your Username"
+          onChangeText={onChangeUsername}
+          value={username}
+          style={styles.input}
+          maxLength={20}
+        />
 
-      {/* Password Input */}
-      <TextInput
-        placeholder="Put In Your Password"
-        onChangeText={onChangePassword}
-        value={password}
-        style={styles.input}
-        maxLength={30}
-      />
+        {/* Password Input */}
+          <TextInput
+            placeholder="Put In Your Password"
+            onChangeText={onChangePassword}
+            value={password}
+            style={styles.input}
+            maxLength={30}
+          />
 
-      {/* Confirmation Button */}
-      <Button
-        title="Submit Username and Password"
-        onPress={() => {
-          checkDetails();
-          console.log(page);
-          router.navigate(page);
-        }}
-      />
-
+        {/* Confirmation Button */}
+          <Button
+            title="Submit Username and Password"
+            onPress={() => {
+              checkDetails();
+              console.log(page);
+              router.navigate(page);
+            }}
+          />
+      </View>
     </SafeAreaView>
   );
 }
@@ -99,18 +101,25 @@ const styles = StyleSheet.create({
   },
   guide: {
     alignSelf: 'center',
-    fontSize: "30",
+    fontSize: 30,
     color: 'blue'
   },
   error: {
     alignSelf: 'center',
-    fontSize: "30",
+    fontSize: 30,
     color: 'red',
     fontWeight: 'bold',
   },
   container: {
     flex: 1,
+    borderWidth: 2,
+    borderColor: "gray",
     justifyContent: 'center',
-    marginHorizontal: 16,
+    margin: 20,
+    alignSelf: "center"
   },
+  picture: {
+    width: 250,
+    height: 250,
+  }
 });
