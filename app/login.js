@@ -50,20 +50,15 @@ export default function App() {
     <SafeAreaView>
       <LinkButton page="../" title="Sign Up" />
 
-        <View style={styles.container}>
-          <Image 
-            style={styles.picture}
-            
-          />
-        {/**
-          * This Text element opener is responsible for changing the color of the responding text.
-          * It checks whether or not the areasFilled variable is false ("(!areasFilled)")
-          * If it is false, it throws the error styled text, making it red. ("? styles.error")
-          * Otherwise, it changes to the guide styled text, making it blue. (": styles.guide")
-        */}
-        <Text style={(!areasFilled) ? styles.error : styles.guide}>
-          {message}
-        </Text>
+      {/**
+      * This Text element opener is responsible for changing the color of the responding text.
+      * It checks whether or not the areasFilled variable is false ("(!areasFilled)")
+      * If it is false, it throws the error styled text, making it red. ("? styles.error")
+      * Otherwise, it changes to the guide styled text, making it blue. (": styles.guide")
+      */}
+      <Text style={(!areasFilled) ? styles.error : styles.guide}>
+        {message}
+      </Text>
 
         {/* Username Input */}
         <TextInput
