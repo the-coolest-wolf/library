@@ -1,7 +1,7 @@
-import { StyleSheet, Text, View, TextInput, Button, SafeAreaView } from 'react-native';
+import { StyleSheet, Text, View, TextInput, Button, SafeAreaView, Image } from 'react-native';
 import { useState } from 'react'
 import { useRouter } from 'expo-router';
-import { LinkButton } from '../components/LinkButton'
+import LinkButton from '../components/LinkButton'
 import { data } from '../userInfo.json'
 
 export default function App() {
@@ -48,45 +48,51 @@ export default function App() {
 
   return (
     <SafeAreaView>
-    
-      {/**
-      * This Text element opener is responsible for changing the color of the responding text.
-      * It checks whether or not the areasFilled variable is false ("(!areasFilled)")
-      * If it is false, it throws the error styled text, making it red. ("? styles.error")
-      * Otherwise, it changes to the guide styled text, making it blue. (": styles.guide")
-      */}
-      <Text style={(!areasFilled) ? styles.error : styles.guide}>
-        {message}
-      </Text>
+      <LinkButton page="../" title="Sign Up" />
 
-      {/* Username Input */}
-      <TextInput
-        placeholder="Put In Your Username"
-        onChangeText={onChangeUsername}
-        value={username}
-        style={styles.input}
-        maxLength={20}
-      />
+        <View style={styles.container}>
+          <Image 
+            style={styles.picture}
+            
+          />
+        {/**
+          * This Text element opener is responsible for changing the color of the responding text.
+          * It checks whether or not the areasFilled variable is false ("(!areasFilled)")
+          * If it is false, it throws the error styled text, making it red. ("? styles.error")
+          * Otherwise, it changes to the guide styled text, making it blue. (": styles.guide")
+        */}
+        <Text style={(!areasFilled) ? styles.error : styles.guide}>
+          {message}
+        </Text>
 
-      {/* Password Input */}
-      <TextInput
-        placeholder="Put In Your Password"
-        onChangeText={onChangePassword}
-        value={password}
-        style={styles.input}
-        maxLength={30}
-      />
+        {/* Username Input */}
+        <TextInput
+          placeholder="Put In Your Username"
+          onChangeText={onChangeUsername}
+          value={username}
+          style={styles.input}
+          maxLength={20}
+        />
 
-      {/* Confirmation Button */}
-      <Button
-        title="Submit Username and Password"
-        onPress={() => {
-          checkDetails();
-          console.log(page);
-          router.navigate(page);
-        }}
-      />
+        {/* Password Input */}
+          <TextInput
+            placeholder="Put In Your Password"
+            onChangeText={onChangePassword}
+            value={password}
+            style={styles.input}
+            maxLength={30}
+          />
 
+        {/* Confirmation Button */}
+          <Button
+            title="Submit Username and Password"
+            onPress={() => {
+              checkDetails();
+              console.log(page);
+              router.navigate(page);
+            }}
+          />
+      </View>
     </SafeAreaView>
   );
 }
@@ -100,18 +106,25 @@ const styles = StyleSheet.create({
   },
   guide: {
     alignSelf: 'center',
-    fontSize: "30",
+    fontSize: 30,
     color: 'blue'
   },
   error: {
     alignSelf: 'center',
-    fontSize: "30",
+    fontSize: 30,
     color: 'red',
     fontWeight: 'bold',
   },
   container: {
     flex: 1,
+    borderWidth: 2,
+    borderColor: "gray",
     justifyContent: 'center',
-    marginHorizontal: 16,
+    margin: 20,
+    alignSelf: "center"
   },
+  picture: {
+    width: 250,
+    height: 250,
+  }
 });
