@@ -1,10 +1,11 @@
 import React from 'react';
-import {StyleSheet, Text, ScrollView, StatusBar, Image, Button,View} from 'react-native';
+import {StyleSheet, Text, ScrollView, StatusBar, Image, Button,View,Pressable} from 'react-native';
 import {SafeAreaView, SafeAreaProvider} from 'react-native-safe-area-context';
 import LinkButton from '../components/LinkButton';
-import { Link } from 'expo-router';
+import { useNavigation } from '@react-navigation/native';
 
 export default function App(){
+  const navigation = useNavigation();
 
     return(
         <SafeAreaProvider>
@@ -12,7 +13,9 @@ export default function App(){
               <ScrollView style={styles.awesomeScrollyView}>
                 <Text style={styles.textz}>CLASSIFIED</Text>
                 <Text style={styles.textz}>the_wolf</Text>
-                <Link style={styles.linkStyle1} href="../homeScreen">Back</Link>
+                <Pressable style={styles.linkStyle1} onPress={() => navigation.goBack()}>
+                  <Text>Back</Text>
+                </Pressable>
                 <Image style={styles.book} source={require("../assets/riyriaRevo1.jpg")}/>
                 <Text style={styles.texts}>Favorite Book</Text>
                 <Image style={styles.authorStyle} source={require("../assets/author2.webp")}/>

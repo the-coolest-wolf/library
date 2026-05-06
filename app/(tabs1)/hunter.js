@@ -3,6 +3,7 @@ import {  StyleSheet,  Text,  ScrollView,  StatusBar,  Image,  TouchableOpacity}
 import { SafeAreaView, SafeAreaProvider } from 'react-native-safe-area-context';
 import { Link } from 'expo-router';
 import { avalue } from '../settingsScreen';
+import { getAValue } from '../../components/backgroundColor';
 
 const ScrollViews = () => (
 <ScrollView>
@@ -90,11 +91,14 @@ const ScrollViews = () => (
 export default ScrollViews;
 
 const styles = StyleSheet.create({
+  // container1:{
+  //   backgroundColor: getAValue,
+  // },
   container: {
     flex: 1,
     paddingTop: StatusBar.currentHeight,
   },
-  awesomeScrollyView: { backgroundColor: avalue },
+  awesomeScrollyView: { backgroundColor: getAValue },
   linkStyle1: {
     fontSize: 20,
   },

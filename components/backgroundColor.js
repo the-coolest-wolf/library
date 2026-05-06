@@ -1,4 +1,4 @@
-let avalue = 'green';
+let avalue = 'grey';
 const listeners = new Set();
 
 export function getAValue() { return avalue; }

@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { View, Text, StyleSheet } from "react-native";
 import { Dropdown } from 'react-native-element-dropdown';
 import { Link } from 'expo-router';
-import { avalue, AsetValue } from '../components/backgroundColor';
+import { getAValue,setAValue,subscribeAValue } from '../components/backgroundColor';
 
 const data = [
   { label: 'Grey', value: "grey" },
@@ -12,13 +12,12 @@ const data = [
 
 export default function App() {
   // 1. Lift state to the main App component
-   const [avalue, setValue] = useState('grey');
+    const [avalue, setValue] = useState('grey');
 
   return (
     // 2. Pass the background color directly to the style here
-    <View style={[styles.container, { backgroundColor: avalue }]}>
-      <Text>{"\n\n\n\n"}</Text>
-      <Text>What is your desired background?</Text>
+    <View style={[styles.container, { backgroundColor: getAValue }]}>
+      <Text>{"\n\n\n\n\n"}What is your desired background?</Text>
       <Link style={styles.linkStyle1} href="/(tabs1)/hunter">
           Back
         </Link>
@@ -30,7 +29,7 @@ export default function App() {
           valueField="value"
           placeholder="Default (Grey)"
           value={avalue}
-          onChange={item => AsetValue(item.value)}
+          onChange={item => setAValue(item.value)}
         />
       </View>
 
