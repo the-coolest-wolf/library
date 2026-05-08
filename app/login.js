@@ -22,23 +22,18 @@ export default function App() {
     if ((username == null || username == "") && (password == null || password == "")) {
       onChangeMessage("Please put in your Username and Password") // switch message to ask for a name and pass
       page = "login";
-
     } else if (username == null || username == "") { // if only username is empty...
       onChangeMessage("Please put in your Username.") // switch message to ask for a name
-      page = "login";
-
+      page = "login"; 
     } else if (password == null || password == "") { // if only password is empty...
       onChangeMessage("Please input your Password.") // switch message to ask for a pass
       page = "login";
-
-    } else if(username != data[0].user || username != data[1].user || username != data[2].user){ // if none of the usernmes match...
+    } else if(username != data[0].user && username != data[1].user && username != data[2].user){ // if none of the usernmes match...
       onChangeMessage("There is no account under that Username.") // switch message saying that acc. doesn't exist
       page = "login"
-
     } else if (username == data[2].user && password == data[2].pass) { // if guest's login credentials are put in
       onChangeMessage("Navigating you to next page...")
       page = "guest";
-
     } else if (username == data[1].user) { // if the username matches mine...
 
       if(password == data[1].pass){
@@ -55,6 +50,7 @@ export default function App() {
         onChangeMessage("That Password is incorrect.")
       }
     }
+    
   }
 
   return (
