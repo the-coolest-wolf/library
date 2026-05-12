@@ -22,8 +22,12 @@ export default function App() {
 
     // function executed when pressing the button on this screen
     function textuals() {
-        // if both inputs aren't blank...
-        if ((username != "" && username != null) && (password != "" && password != null)) {
+        // if username has a username that's already been used...
+        if (username == data[0].user || username == data[1].user) {
+            console.log("Duplicated Username") // print message stating that there's an already used username
+            onChangeMessage("That username is already taken! Please try another.") // display text stating that the username's already taken
+            // else if both inputs aren't blank... 
+        } else if((username != null && username != "") && (password != null && password != "")){
             console.log("Has Username and Password") // print a message in console stating that it worked
             router.navigate("guest") // take the user to the guest page (hard-coded/fixed)
             onChangeMessage("")
@@ -36,9 +40,6 @@ export default function App() {
             console.log("No Username") // print a message in console stating that it's missing
             onChangeMessage("You have to put in a Username for you account!")
             // else if only the password input is blank...
-        } else if (username == data[0].user || username == data[1].user) {
-            console.log("Duplicated Username")
-            onChangeMessage("That username is already taken! Please try another.")
         } else if (password == "" || password == null) {
             console.log("No Password") // print a message in console stating that it's missing
             onChangeMessage("You have to put in a Password for your account!") // display a message stating why the sign-up worked
