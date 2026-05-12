@@ -12,7 +12,7 @@ const data = [
 
 export default function App() {
   // 1. Lift state to the main App component
-    const [avalue, setValue] = useState('grey');
+    //const [avalue, setValue] = useState('grey');
 
   return (
     // 2. Pass the background color directly to the style here
@@ -28,7 +28,7 @@ export default function App() {
           labelField="label"
           valueField="value"
           placeholder="Default (Grey)"
-          value={avalue}
+          value={getAValue}
           onChange={item => setAValue(item.value)}
         />
       </View>
