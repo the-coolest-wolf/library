@@ -5,7 +5,7 @@ import LinkButton from '../components/LinkButton'
 //import { data } from '../userInfo.json'
 import { AccountStyles } from '../components/RegisterLoginStyles'
 
-export default function App() {
+export default function Login() {
   const router = useRouter();
   const data = require('../userInfo.json');
 
