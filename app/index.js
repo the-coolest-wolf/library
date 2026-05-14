@@ -49,8 +49,7 @@ export default function App() {
     return (
         <SafeAreaView>
             <LinkButton page="login" title="Log In" />
-            <LinkButton page="hunter" title="Hunter Page" />
-            <LinkButton page="omnila" title="Omnila Page" />
+            <LinkButton page="testingComponents" title="test page"/>
                 <View style={AccountStyles.container}>
                     <Image
                         style={AccountStyles.icon}

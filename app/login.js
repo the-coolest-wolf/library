@@ -5,7 +5,7 @@ import LinkButton from '../components/LinkButton'
 //import { data } from '../userInfo.json'
 import { AccountStyles } from '../components/RegisterLoginStyles'
 
-export default function App() {
+export default function Login() {
   const router = useRouter();
   const data = require('../userInfo.json');
 
@@ -55,7 +55,7 @@ export default function App() {
 
   return (
     <SafeAreaView>
-      <LinkButton page="../" title="Sign Up" />
+      <LinkButton page="/" title="Sign Up" />
 
       <View style={AccountStyles.container}>
 
