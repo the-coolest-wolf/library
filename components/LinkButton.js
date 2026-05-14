@@ -4,11 +4,11 @@ import {Link} from 'expo-router';
 
 
 export default function LinkButton({page,title}) {
-    return(
-        <View style={styles.container}>
-            <Link style={styles.login} href={page}>{title}</Link>
-        </View>
-    );
+  return(
+    <View style={styles.container}>
+      <Link style={styles.login} href={page}>{title}</Link>
+    </View>
+  );
 }
 
 
