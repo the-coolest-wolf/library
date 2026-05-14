@@ -55,7 +55,7 @@ export default function Login() {
 
   return (
     <SafeAreaView>
-      <LinkButton page="../" title="Sign Up" />
+      <LinkButton page="/" title="Sign Up" />
 
       <View style={AccountStyles.container}>
 
