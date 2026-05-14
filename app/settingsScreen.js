@@ -34,7 +34,8 @@ export default function App() {
       </View>
 
       <Text>{"\n\n\n\n"}</Text>
-      <Text>Show your name publicly?</Text>
+      <Text>Show your name publicly?{"\n"}y/n?{"\n\n"}</Text>
+      <Link style={styles.linkStyle2} href="/login">LOGOUT</Link>
     </View>
   );
 }
@@ -62,5 +63,9 @@ const styles = StyleSheet.create({
     top: -1,
     justifyContent: 'flex-start',
     alignSelf: 'flex-start',
-  }
+  },
+  linkStyle2:{
+    justifyContent:'flex-end',
+    alignSelf:'flex-end',
+  },
 });

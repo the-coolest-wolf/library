@@ -1,12 +1,13 @@
-let avalue = 'grey';
-const listeners = new Set();
+import React, { createContext, useState } from 'react';
 
-export function getAValue() { return avalue; }
-export function setAValue(v) {
-  avalue = v;
-  listeners.forEach(fn => fn(avalue));
-}
-export function subscribeAValue(fn) {
-  listeners.add(fn);
-  return () => listeners.delete(fn);
-}
+export const ColorContext = createContext();
+
+export const ColorProvider = ({ children }) => {
+    const [color, setColor] = useState('#ffffff'); // Default color
+
+    return (
+        <ColorContext.Provider value={{ color, setColor }}>
+            {children}
+        </ColorContext.Provider>
+    );
+};
