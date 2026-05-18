@@ -11,7 +11,7 @@ export default function Book({info}){
     *  In that same order - excluding cover - the texts are in: bolded black, italicized yellow, and standard black.
     *  Additionally, in that same same order, the fonts are: Times New Roman, Comic Sans, and Roboto.
     */
-    const { cover, title, tags, description } = info.params;
+    const { cover, title, authors, tags, description } = info.params;
     return (
         <View style={styles.booktainer}>
             <Image
@@ -19,6 +19,7 @@ export default function Book({info}){
                 source={{uri:cover}}
             />
             <Text style={styles.title}>{title}</Text>
+            <Text style={styles.author}>{authors}</Text>
             <Text style={styles.tags}>{tags}</Text>
             <Text style={styles.description}>{description}</Text>
         </View>
@@ -43,6 +44,14 @@ const styles = StyleSheet.create({
         fontWeight: 'bold',
         top: -220,
         marginLeft: 220,
+        fontFamily: 'Times-New-Roman'
+    },
+    author:{
+        fontSize: 25,
+        top: -220,
+        marginLeft: 220,
+        color: 'blue',
+        fontStyle: 'italic',
         fontFamily: 'Times-New-Roman'
     },
     tags:{
